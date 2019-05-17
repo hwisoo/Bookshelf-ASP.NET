@@ -18,6 +18,11 @@ namespace Bookshelf.Controllers
 
         public IActionResult Book()
         {
+            ViewData["Title"] = "War and Peace";
+            ViewData["Author"] = "Leo Tolstoy";
+            ViewData["Year"] = 1869;
+            ViewData["Description"] = "Often called the greatest novel ever written, War and Peace is at once an epic of the Napoleonic wars, a philosophical study, and a celebration of the Russian spirit. Tolstoy's genius is clearly seen in the multitude of characters in this massive chronicle, all of them fully realized and equally memorable. Out of this complex narrative emerges a profound examination of the individual's place in the historical process, one that makes it clear why Thomas Mann praised Tolstoy for his Homeric powers and placed War and Peace in the same category as The Iliad.";
+            ViewData["Image"] = "https://images-na.ssl-images-amazon.com/images/I/51fyqN7woLL._SY346_.jpg";
             return View();
         }
 

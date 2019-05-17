@@ -1,7 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Book";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Hello there.</p>
+}
+<h2>Title: @ViewData["Title"]</h2>
+<h3>Author: @ViewData["Author"]</h3>
+<h4>Published: @ViewData["Year"]</h4>
+<img src=@ViewData["Image"] alt=@ViewData["Title"]>
+<p>@ViewData["Description"]</p>
