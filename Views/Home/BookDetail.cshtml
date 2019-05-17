@@ -1,0 +1,10 @@
+﻿@model Bookshelf.Models.Book
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Book Details";
+}
+<h2>Title: @Model.BookTitle</h2>
+<h3>Author: @Model.Author.FullName </h3>
+<h5>Published: @Model.Year</h5>
+<img src=@Model.Image alt=@Model.BookTitle>
+<p>@Model.Description</p>
