@@ -1,8 +1,9 @@
 ﻿@{
-
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Book Details";
 }
-<h2>Title: @ViewData["Title"]</h2>
+<h2>Title: @ViewData["BookTitle"]</h2>
 <h3>Author: @ViewData["Author"]</h3>
-<h4>Published: @ViewData["Year"]</h4>
+<h5>Published: @ViewData["Year"]</h5>
 <img src=@ViewData["Image"] alt=@ViewData["Title"]>
 <p>@ViewData["Description"]</p>
